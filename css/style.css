@@ -1,0 +1,88 @@
+/* Reseter */
+* {margin: 0;
+    padding: 0;}
+/* Clases */
+.tituloDePagina {color: whitesmoke; font-size: 1.5rem; display: inline-block;}
+.tituloDeSeccion {color: #e32118}
+.areas__p--color {color: #4b4b4d}
+.modalidadesFlex {display: flex;
+                flex-direction: row;
+                justify-content: space-between;}
+.modalidades {background-color: #e32118;
+            flex: 1;
+            margin: 5px;
+            color: whitesmoke; 
+            text-align: center;}
+.modalidades__titulo--fuente {color: whitesmoke; font-weight: bold; margin-bottom: 5px;}
+.article--centrar {text-align: center;}
+.header__nav--color {background-color: #b51620; color: whitesmoke}
+/* Grillas */
+.contenedorGrillas {display: grid;
+                    padding: 10px;
+                    margin: 15px;
+                    grid-template-areas: 
+                    "prematuro autonomia talleres"
+                    "equipamiento equipamiento equipamiento"
+                    "botox espasticidad alta"
+                    "tecnologia tecnologia tecnologia"
+                    "alimentacion salidas virtual";
+                    grid-template-columns: auto auto auto;
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;}
+.prematuro {grid-area: "prematuro";}
+.autonomia {grid-area: "autonomia";}
+.talleres {grid-area: "talleres";}
+.equipamiento {grid-area: "equipamiento";
+                grid-column-start: 1;
+                grid-column-end: 4;}
+.botox {grid-area: "botox";}
+.espasticidad {grid-area: "espasticidad";}
+.alta {grid-area: "alta";}
+.tecnologia {grid-area: "tecnologia";
+            grid-column-start: 1;
+            grid-column-end: 4;}
+.alimentacion {grid-area: "alimentacion";}
+.salidas {grid-area: "salidas"}
+.virtual {grid-area: "virtual";}
+/* Header */
+.header {background-color: #b51620;
+    margin-bottom: 15px;
+    text-align: center;}
+/* Main */
+ul li {color: #3d3d3f}
+div {margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;}
+h1 {margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;}
+h2 {text-align: center;}
+p {text-align: justify;
+    margin: 5px;}
+i {display: inline-block;
+    color: #b51620; 
+    font-size: 2.5rem;}
+/* Imagenes */
+img {margin-top: 10px;
+    margin-bottom: 10px}
+img.fluid {max-width: 100%;
+            height: auto;}
+/*Modificaciones a Bootstrap*/
+div.carousel {width: 100%;
+                align-self: center;}
+/* Fuentes */
+p {font-family: 'Raleway', sans-serif;}
+label {font-family: 'Raleway', sans-serif;}
+li {font-family: 'Raleway', sans-serif;}
+li a {font-family: 'Quicksand', sans-serif;}
+h1 {font-family: 'Quicksand', sans-serif; font-size: 1.5rem; color: #b51620; font-weight: 500;}
+h2 {font-family: 'Quicksand', sans-serif; font-size: 1.2rem; color: #e32118; font-weight: 400;}
+h3 {font-family: 'Quicksand', sans-serif; font-size: 1.1rem; color: #e85d0f; font-weight: 400;}
+/* Footer */
+footer {
+    background: #b51620;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    }

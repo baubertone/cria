@@ -1,0 +1,17 @@
+{
+  "name": "cria",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x\"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed scss/style.scss css/main.css && npm run css-autoprefixer",
+    "css-autoprefixer": "\"postcss -u autoprefixer -r css/main.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
