@@ -34,12 +34,15 @@ iframe {margin-top: 15px;}
 /* Clases */
 .tituloDePagina {color: whitesmoke; font-size: 1.5rem; display: inline-block;}
 .tituloDeSeccion {color: $color-medio}
-.areas__p--color {color: #4b4b4d}
+.areas__p--color {color: #3d3d3f}
 .modalidadesFlex {display: flex;
                 flex-direction: row;
                 justify-content: space-between;}
-.article--centrar {text-align: center;}
-.modalidades {@extend.article--centrar;
+.article--areas {text-align: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: cover;}
+.modalidades {@extend.article--areas;
             flex: 1;
             margin: 5px;
             color: $color-medio;}
@@ -50,4 +53,3 @@ div.carousel {width: 100%;
     align-self: center;}
 /* Animaciones */
 i:hover {color: $color-claro;}
-
